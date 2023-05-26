@@ -1,4 +1,3 @@
-﻿//Copyright 2022, Bradley Peterson, Weber State University, all rights reserved. (Oct 2022)
 
 #include <iostream>
 #include <unordered_map>
@@ -27,13 +26,10 @@ template <typename T>
 class HashTable {
 public:
 
-  // TODO: Make a HashTable constructor which accepts a number of buckets.  The constructor
-  // itself should create a new array, with this->arr holding the 0th index/address of the array
-  // Also make sure to update buckets.
    HashTable(unsigned int buckets);
   ~HashTable() { delete[] arr; }
 
-  // A move constructor that has been provided for you
+
   HashTable(HashTable<T>&& objToCopy) noexcept {
     this->buckets = objToCopy.buckets;
     this->arr = objToCopy.arr;
@@ -41,7 +37,7 @@ public:
     objToCopy.arr = nullptr;
   }
 
-  // Disabled move assignment copy constructor and copy assignment.  
+
   HashTable(const HashTable<T>& objToMove) = delete;
   HashTable<T> operator=(const HashTable<T>& objToMove) = delete;
   HashTable<T> operator=(HashTable<T>&& objToMove) = delete;
@@ -49,7 +45,7 @@ public:
   unsigned int getNumBuckets() { return buckets; }
   unsigned int getTotalCount() const;
 
-  // TODO: Create the following methods
+  //methods
  
 // An L-value create()
   void create(const string& key, const T& value);
@@ -81,7 +77,7 @@ private:
   unsigned int hash(const string& key) const;
 };
 
-// TODO, put your constructor and methods here
+//constructor and operator functions
 
 template <typename T>
  unsigned int HashTable<T>::hash(const string& key) const {
@@ -185,9 +181,6 @@ unsigned int HashTable<T>::getTotalCount() const {
 }
 
 
-//************************************************************************************
-//A quick and simple class that simulates a Product object.  Do not modify
-//************************************************************************************
 class Product {
 public:
   void setCost(int cost);
@@ -219,7 +212,7 @@ string Product::getAllInfo() {
 }
 
 
-//This helps with testing, do not modify.
+//This helps with testing.
 template <typename T>
 string NumberToString(T Number)
 {
@@ -228,7 +221,7 @@ string NumberToString(T Number)
   return ss.str();
 }
 
-//This helps with testing, do not modify.
+//This helps with testing.
 bool checkEmpty(string testName, string whatItIs) {
 
   if (whatItIs != "") {
@@ -241,7 +234,7 @@ bool checkEmpty(string testName, string whatItIs) {
   }
 }
 
-//This helps with testing, do not modify.
+//This helps with testing.
 bool checkTest(string testName, string whatItShouldBe, string whatItIs) {
 
   if (whatItShouldBe == whatItIs) {
@@ -259,7 +252,7 @@ bool checkTest(string testName, string whatItShouldBe, string whatItIs) {
   }
 }
 
-//This helps with testing, do not modify.
+//This helps with testing.
 bool checkTest(string testName, int whatItShouldBe, int whatItIs) {
 
   if (whatItShouldBe == whatItIs) {
@@ -272,7 +265,7 @@ bool checkTest(string testName, int whatItShouldBe, int whatItIs) {
   }
 }
 
-//This helps with testing, do not modify.
+//This helps with testing.
 bool checkTestMemory(string testName, int whatItShouldBe, int whatItIs) {
 
   if (whatItShouldBe == whatItIs) {
@@ -285,7 +278,7 @@ bool checkTestMemory(string testName, int whatItShouldBe, int whatItIs) {
   }
 }
 
-//This helps with testing, do not modify.
+//This helps with testing.
 void testSimpleIntHash() {
 
  // cout << "######---  testSimpleIntHash(): Uncomment your tests one-by-one to test ---######" << endl;
