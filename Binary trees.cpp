@@ -1,4 +1,4 @@
-// Copyright 2022, Bradley Peterson, Weber State University, all rights reserved. (3/2022)
+
 
 #include <iostream>
 #include <string>
@@ -246,9 +246,6 @@ void pressEnterToContinue() {
 
     cin.get();
 
-}
-
-// Copyright 2022, Bradley Peterson, Weber State University, all rights reserved. (3/2022)
 
 int main() {
 
