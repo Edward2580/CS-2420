@@ -1,4 +1,4 @@
-//Copyright 2022, Bradley Peterson, Weber State University, All rights reserved. (Sep 2022)
+
 #include <iostream>
 #include <string>
 #include <cstdio>
@@ -268,7 +268,7 @@ bool checkTestMemory(string testName, int whatItShouldBe, int whatItIs) {
   }
 }
 
-//Copyright 202, Bradley Peterson, Weber State University, All rights reserved. (Sep 2022)
+
 
 void testQueueForCS2420() {
 
