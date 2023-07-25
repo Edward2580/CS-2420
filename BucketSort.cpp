@@ -320,7 +320,7 @@ void pressEnterToContinue() {
 
 }
 
-//Copyright 2022, Bradley Peterson, Weber State University, all rights reserved. (03/2022)
+
 
 int main() {
 
