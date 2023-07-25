@@ -1,4 +1,4 @@
-//Copyright 2022, Bradley Peterson, Weber State University, All rights reserved. (Oct 2022)
+
 
 #include <iostream>
 #include <map>
@@ -242,7 +242,7 @@ void DoublyLinkedList<T>::pushBack(const T& item) {
 
 
 
-//Copyright 2022, Bradley Peterson, Weber State University, All rights reserved. (Oct 2022)
+
 //***********************************
 //The DoublyLinkedList class methods
 //***********************************
