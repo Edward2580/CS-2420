@@ -1,4 +1,4 @@
-//Copyright 2022, Bradley Peterson, Weber State University, All rights reserved. (Sep 2022)
+
 #include <sstream>
 #include <map>
 #include <chrono>
@@ -180,10 +180,6 @@ string BaseDoublyLinkedList<T>::getListBackwardsAsString() {
   return ss.str();
 }
 
-//Copyright 2022, Bradley Peterson, Weber State University, All rights reserved. (Sep 2022)
-//**********************************
-//Write your code below here
-//**********************************
 template <typename T>
 class DoublyLinkedList : public BaseDoublyLinkedList<T> {
 
@@ -583,9 +579,6 @@ void DoublyLinkedList<T>::removeAllInstances(const T& value) {
 
    
 }
-//**********************************
-//Write your code above here
-//**********************************
 
 
 //This helps with testing, do not modify.
