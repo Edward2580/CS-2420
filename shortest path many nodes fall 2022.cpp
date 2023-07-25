@@ -1,4 +1,4 @@
-﻿//Copyright 2022, Bradley Peterson, Weber State University, all rights reserved.
+﻿
 
 #include <fstream>
 #include <iostream>
