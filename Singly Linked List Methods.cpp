@@ -1,4 +1,4 @@
-//Copyright 2022, Bradley Peterson, Weber State University, All rights reserved. (9/2022)
+
 #include <sstream>
 #include <chrono>
 #include <iostream>
